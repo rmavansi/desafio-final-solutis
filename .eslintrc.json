@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "plugin:cypress/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "cypress",
+    "prettier"
+  ],
+  "rules": {
+    "cypress/no-assigning-return-values": "error",
+    "cypress/no-unnecessary-waiting": "off",
+    "cypress/assertion-before-screenshot": "warn",
+    "cypress/no-force": "warn",
+    "cypress/no-async-tests": "error",
+    "import/prefer-default-export": "off",
+    "prettier/prettier": "error"
+  },
+  "env": {
+      "cypress/globals": true
+   }
+}
